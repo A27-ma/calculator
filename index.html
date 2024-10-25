@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" media="screen and (max-width: 806px)" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<style>
+
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: black; */
+    background-image: url("https://images.unsplash.com/photo-1723242017539-39cd15eb75fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+        font-family: sans-serif;
+    /* font-size: rem; */
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-radius: 3rem;
+    height: 100%;
+    width: 30%;
+    padding-top: 20px;   
+    margin-top: 50px;
+    backdrop-filter: blur(5px);
+}
+
+.input-text{
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px blue;
+    max-width: 27vw;
+}
+.button{
+    /* font-size: 7rem; */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 2rem;
+}
+button:active{
+background-color: aliceblue;
+
+}
+.screen input[type]{
+    /* text-align: end; */
+    padding-right: 5px;
+}
+.number{
+    background: red;
+    border: none;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 11px;
+}
+
+</style>
+<body>
+
+<div class="calculator">
+    <div class="screen">
+        <input type="text" class="input-text" placeholder="calculator" >
+    </div>
+    <div class="button">
+
+        <button class="number digit">0</button>
+        <button class="number digit">1</button>
+        <button class="number digit">2</button>
+        <button class="number digit">3</button>
+        <button class="number digit">4</button>
+        <button class="number digit">5</button>
+        <button class="number digit">6</button>
+        <button class="number digit">7</button>
+        <button class="number digit">8</button>
+        <button class="number digit">9</button>
+        <button class="number addition">+</button>
+        <button class="number substraction">-</button>
+        <button class="number multi">*</button>
+        <button class="number division">%</button>
+        <button class="number back">.</button>
+        <button class="number back">C</button>
+        <button class="number equal">=</button>
+        
+    </div>
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js">
+
+
+</script>
+</body>
+</html>
